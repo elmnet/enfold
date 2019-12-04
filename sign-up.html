@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="sign-in.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header id="myNav">
+    <div class="container-full" id="navbar">
+        <a href="index.html" class="link"><p>
+            <span class="bold-2rem light-grey">GAME</span>
+            <br>
+            <span class="bold-2rem orange">LOGO</span>
+        </p></a>
+        <div id="hamburger-icon">
+            <input type="checkbox" id="btnControl"/>
+            <label for="btnControl" id="label-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="sign-in.html" class="underline">Sign In</a></li>
+        </ul>
+    </div>
+    <ul id="mobile-nav-ul">
+        <li><a href="index.html"><img src="images/menu%20svgs/services.png" alt="">Home</a></li>
+        <li><a href="#"><img src="images/menu%20svgs/questionnaire.png" alt="">Play</a></li>
+        <li><a href="#"><img src="images/menu%20svgs/reviewers.png" alt="">FAQs</a></li>
+        <li><a href="#"><img src="images/menu%20svgs/blog.png" alt="">Sign In</a></li>
+    </ul>
+</header>
+
+<section class="first-section">
+    <div class="container sign-in-div">
+        <p class="bold-4rem">Create <span class="orange">Account</span></p>
+        <form action="" id="sign-in-form">
+
+            <input type="text" placeholder="Username" class="text-input">
+            <input type="text" placeholder="E-Mail" class="text-input">
+            <input type="text" placeholder="Password" class="text-input">
+            <input type="text" placeholder="Confirm Password" class="text-input">
+            <!--                <div>
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>-->
+            <p>Date Of Birth</p>
+            <div class="dob">
+                <input type="text" placeholder="DD" class="date">
+                <input type="text" placeholder="MM" class="date">
+                <input type="text" placeholder="YYYY" class="year">
+            </div>
+            <button id="sign-up-button">Register</button>
+            <p class="semi-1rem pt-10">Already have an account? <a href="sign-in.html" class="orange link">Sign In</a></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="upper-footer">
+        <div class="container">
+            <div class="icon-and-address">
+                <!--                <img src="images/wall%20street%20shortcut%20white.png" alt="Wall Street Shortcut" class="footer-logo">-->
+                <p class="bold-3rem no-mg">
+                    <span class="light-grey">GAME</span>
+                    <br>
+                    <span class="orange">LOGO</span>
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <ul class="quicklinks">
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+                <ul class="quicklinks">
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">User Guide</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <div class="container">
+            <p><span class="medium-075rem light-grey">© 2019 Football Trophy. </span><span
+                    class="regular-075rem light-grey">All Rights Reserved</span>
+            </p>
+
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/d73f645a4a.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

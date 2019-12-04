@@ -1,0 +1,14 @@
+.question{
+    margin-bottom: 1em;
+}
+.faqs-list{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.faqs-list p{
+    max-width: 550px;
+}
+.faq{
+    padding: 20px 0;
+}

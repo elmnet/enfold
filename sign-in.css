@@ -1,0 +1,46 @@
+.sign-in-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+#sign-in-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-input{
+    max-width: 250px;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--clr5);
+    margin: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+.dob{
+    max-width: 284px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.date{
+    width: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--clr5);
+}
+.year{
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--clr5);
+}
+#sign-up-button{
+    margin-top: 40px;
+    padding: 0.5em 3em
+}

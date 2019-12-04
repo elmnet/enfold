@@ -1,0 +1,27 @@
+body{
+    font-family: Montserrat, sans-serif;
+    color: var(--clr5)
+}
+.bold-3rem{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.bold-4rem{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.semi-2rem{
+    font-size: 2rem;
+    font-weight: 600;
+}.semi-1\.125rem{
+     font-size: 1.125rem;
+     font-weight: 600;
+ }
+ .semi-1rem{
+     font-weight: 600;
+     font-size: 1rem;
+ }
+.bold-2rem{
+    font-weight: 700;
+    font-size: 2rem;
+}

@@ -1,0 +1,171 @@
+:root{
+    --clr1: #333333;
+    --clr2: #c3512f;
+    --clr3: #fcfcfc;
+    --clr4: #222222;
+    --clr5: #808080;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--clr3);
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1640px;
+    width: 95%;
+    padding: 0 2.5%;
+    margin: auto;
+}
+.container-sm{
+    max-width: 1364px;
+    width: 95%;
+    padding: 0 2.5%;
+    margin: auto;
+}
+.dark-grey{
+    color: var(--clr4);
+}
+.grey{
+    color: var(--clr1);
+}
+.orange{
+    color: var(--clr2);
+}
+.whitish{
+    color: var(--clr3);
+}
+.light-grey{
+    color: var(--clr5)
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.first-section{
+    padding-top: 100px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+.home-section-one{
+    background-image: url("images/lub.png") ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#play-button{
+    padding: 0.125em 1em;
+    border-radius: 30px;
+    border: 3px solid var(--clr2);
+    background-color: var(--clr2);
+    color: var(--clr3);
+    margin: auto auto 20px;
+    transition: 200ms;
+}
+#play-button:hover{
+    transform: scale(1.02);
+    background-color: var(--clr3);
+    color: var(--clr2)
+}
+.intro-play{
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#home-first{
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.home-signing-in-out{
+    display: flex;
+    justify-content: space-around;
+}
+.sign-in-up-form{
+    padding: 100px 0;
+    max-width: max-content;
+    color: var(--clr1)
+}
+
+.form-style{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 300px;
+    grid-row-gap: 10px;
+    padding-bottom: 10px;
+}
+.form-style label{
+    font-weight: 500;
+}
+.form-style input{
+    border: 2px solid var(--clr2);
+    border-radius: 10px;
+    padding: 0.5em;
+}
+#sign-up-button, #sign-in-button{
+    padding: 0.5em 2em;
+    border-radius: 15px;
+    border: 3px solid var(--clr2);
+    background-color: var(--clr2);
+    color: var(--clr3);
+    margin: auto;
+    transition: 100ms;
+    font-size: 1.125rem;
+    margin-top: 20px;
+}
+#sign-up-button:hover, #sign-in-button:hover{
+    background-color: var(--clr3);
+    color: var(--clr2)
+}
+.why-us img{
+    height: 250px;
+    justify-self: center;
+    padding-top: 80px;
+}
+.why-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.screenshots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.screenshots p{
+    border-bottom: 2px solid var(--clr5);
+}
+.screenshots img{
+    max-width: 300px;
+    /*padding: 1em;*/
+    margin: 1em;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+#register-email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--clr5);
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--clr5);
+    padding-bottom: 0.125rem;
+    margin-bottom: 30px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
