@@ -48,3 +48,15 @@
 .pb-20{
     padding-bottom: 20px;
 }
+.pb-40{
+    padding-bottom: 40px;
+}
+.d-flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.m-auto{
+    margin: auto;
+}

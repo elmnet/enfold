@@ -1,0 +1,23 @@
+.ad-location{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+.ad-location img{
+    max-width: 350px;
+    padding: 0.25em;
+    border: 3px solid var(--clr2);
+    border-radius: 20px;
+    transition: 300ms;
+    margin-bottom: 1em;
+}
+.ad-location img:hover{
+    transform: scale(1.05);
+}
+@media (max-width: 1024px){
+    .ad-location{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

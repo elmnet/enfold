@@ -14,7 +14,7 @@
 .text-input{
     max-width: 250px;
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 1rem 5%;
     border-radius: 10px;
     border: 1px solid var(--clr5);
     margin: 1em 0;

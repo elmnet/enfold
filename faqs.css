@@ -12,3 +12,12 @@
 .faq{
     padding: 20px 0;
 }
+.faqs-list>div{
+    padding-right: 0.5em;
+}
+@media (max-width: 768px){
+    .faqs-list{
+        display: unset;
+    }
+
+}

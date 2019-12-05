@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign In</title>
+    <title>Support</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="nav.css">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="play.css">
     <link rel="stylesheet" href="faqs.css">
     <link rel="stylesheet" href="sign-in.css">
+    <link rel="stylesheet" href="support.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -51,18 +52,44 @@
 </header>
 
 <section class="first-section">
-    <div class="container sign-in-div">
-        <p class="bold-4rem">Sign <span class="orange">In</span></p>
-        <form action="" id="sign-in-form">
+    <div class="container-sm pt-60 pb-40">
+        <p class="bold-4rem center orange">Support</p>
+        <p class="semi-1.125rem light-grey center">Thank you for reaching out to us! How can we help you?</p>
+        <div class="support-types">
+            <div>
+                <img src="images/icons/payment.png" alt="">
+                <p>Payment Issue</p>
+            </div>
+            <div>
+                <img src="images/icons/support.png" alt="">
+                <p>Tech Support</p>
+            </div>
+            <div>
+                <img src="images/icons/account.png" alt="">
+                <p>Account Recovery</p>
+            </div>
+            <div>
+                <img src="images/icons/bug.png" alt="">
+                <p>Report a Bug</p>
+            </div>
 
-                <input type="text" placeholder="Username" class="text-input">
-                <input type="text" placeholder="Password" class="text-input">
-                <div>
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember Me</label>
-                </div>
-                <button id="sign-in-button">Sign In</button>
-                <p class="semi-1rem pt-10">Don't have an account? <a href="sign-up.html" class="orange link">Create new</a></p>
+        </div>
+        <p class="center pt-60 pb-40 m-auto" style="max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa eum explicabo fugit illo impedit
+            ipsam, laudantium magnam modi necessitatibus praesentium quia quod reiciendis repudiandae, vitae!
+            Accusantium adipisci aliquid, amet distinctio esse excepturi exercitationem, explicabo illum inventore iste
+            iure maiores nobis odio pariatur possimus praesentium quam quasi recusandae repudiandae sapiente.</p>
+        <form action="" id="support-form">
+            <div class="support-input-fields">
+                <label for="support-email" class="semi-1rem">Your Email Address:</label>
+                <input type="text" id="support-email" class="text-input">
+            </div>
+
+            <div class="support-input-fields">
+                <label for="support-email" class="semi-1rem">Your Query:</label>
+                <textarea name="" id="" cols="30" rows="10" class="text-input message-box"></textarea>
+            </div>
+
+            <button id="support-submit">Submit</button>
         </form>
     </div>
 </section>
