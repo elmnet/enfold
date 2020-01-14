@@ -1,0 +1,651 @@
+:root{
+    --clr1: #333333;
+    --clr2: #c3512f;
+    --clr3: #fcfcfc;
+    --clr4: #222222;
+    --clr5: #c0c0c0;
+}
+#tutorial-home-screen, #tutorial-home-screen2, #tutorial-home-screen3, #tutorial-home-screen4, #tutorial-home-screen5, #tutorial-home-screen6, #tactics, #match-simulation, #stadium,
+#youth-development, #training, #player-profile, #player-profile2, #transfer,
+#bidding, #league, #club{
+    display: none;
+}
+#homeMenu, #tacticsMenu, #transferMenu, #leagueMenu{
+    display: none;
+}
+
+#game-container *{
+    box-sizing: border-box;
+    margin: 0;
+    /*padding: 0;*/
+}
+*:focus{
+    outline: none;
+}
+.manager-speech{
+    margin: 1em 0;
+}
+#continue{
+    margin-top: 1em;
+}
+#game{
+    width: 1000px;
+    margin: auto;
+    font-family: 'Muli', sans-serif;
+}
+#game-nav-1{
+    display: flex;
+    list-style: none;
+    padding: 40px 20px;
+}
+#game-nav-1 a {
+    opacity: 0.5;
+    transition: 200ms;
+}
+.full-opacity{
+    opacity: 1;
+}
+.game-nav-2{
+    display: flex;
+    list-style: none;
+    background-color: var(--clr1);
+    padding: 0.5em 2em;
+}
+.game-nav-2 li{
+    margin-right: 40px !important;
+}
+.game-nav-2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#tutorial-home-screen, #tutorial-home-screen2, #tutorial-home-screen3, #tutorial-home-screen4, #tutorial-home-screen5, #tutorial-home-screen6{
+    padding: 40px 20px;
+}
+#tutorial-steps{
+    padding-left: 0;
+    list-style: none;
+    display:  grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    margin-bottom: 80px;
+}
+#tutorial-steps li{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--clr2);
+    text-align: center;
+    border-radius: 30px;
+    place-content: center;
+    position: relative;
+}
+#tutorial-steps li p{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    color: var(--clr5)
+}
+#tutorial-start-button, #tutorial-start-button2, #tutorial-start-button3, #tutorial-start-button4, #tutorial-start-button5 {
+    /*margin-top: 1em;*/
+    background: var(--clr2);
+    border-radius: 0 0 25px 25px;
+    border: transparent ;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+}
+#tutorial-start-button:hover, #tutorial-start-button2:hover, #tutorial-start-button3:hover, #tutorial-start-button4:hover, #tutorial-start-button5:hover{
+    background-color: #e15330;
+    cursor: pointer;
+}
+.selected-step p{
+    padding-bottom: 52px;
+}
+.manager-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+.manager-div img{
+    padding: 2em;
+}
+
+.manager-div>div{
+    width: 600px;
+    padding: 2em;
+    border-radius: 30px;
+    background-color: var(--clr2);
+    color: white;
+}
+#tactics-container{
+    display: flex;
+    background-color: #333333;
+}
+#players-table{
+    background-color: var(--clr1);
+    width: 400px;
+}
+#players-table ul{
+    padding-left: 0;
+}
+#players-table li{
+    display: grid;
+    grid-template-columns: 40px 200px 80px 80px;
+    place-content: center;
+    height: 35px;
+    color: white;
+    border: 2px solid var(--clr4);
+}
+#players-table li div{
+    text-align: center;
+}
+#players-table li:hover{
+    background-color: var(--clr5);
+    cursor: pointer;
+}
+#players-table li:first-child{
+    font-weight: 700;
+}
+#pitch-view{
+    height: 455px;
+}
+#pitch-position{
+    display: flex;
+    flex-direction: column;
+    width: 287px;
+    background-color: var(--clr1);
+    justify-content: center;
+    align-items: center;
+    height: 455px;
+}
+#pitch-position img {
+    height: 350px;
+    width: 220px;
+    margin-top: 20px;
+}
+#pitch-position button{
+    padding: 0.5em 1em;
+    width: max-content;
+    background-color: var(--clr2);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+    margin: auto;
+    transition: 200ms;
+}
+#pitch-position button:hover{
+    background-color: var(--clr3);
+    color: var(--clr2);
+    cursor: pointer;
+}
+.note{
+    background-color: var(--clr1);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em 0;
+    border-top: 2px solid var(--clr4);
+}
+.tut_heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--clr1);
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.sub_heading{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--clr1);
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+#game-breakdown>div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--clr2);
+}
+#game-breakdown>div>div{
+    margin-top: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 1em 0;
+}
+#game-breakdown ul{
+    padding-left: 0;
+}
+#game-breakdown>div div:first-child li{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#game-breakdown>div div:nth-child(2) li{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 2px solid white;
+}
+#game-breakdown>div li{
+    padding: 0.5em;
+    text-align: center;
+}
+#player-background>div{
+    display: flex;
+    justify-content: space-around;
+}
+#player-background img{
+    margin: auto 0;
+    width: 450px;
+}
+#player-background>div ul{
+    padding-left: 0;
+}
+#player-background>div li{
+    display: grid;
+    grid-template-columns: 40px 150px 40px;
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 2px solid var(--clr2);
+}
+.stadium-upgrade>div{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+}
+.stadium-upgrade>div p:first-child{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr2);
+    margin-bottom: 0.5em;
+}
+.stadium-upgrade button{
+    padding: 0.5em 1em;
+    background-color: var(--clr2);
+    color: white;
+    margin-top: 1em;
+}
+.stadium-upgrade button:hover{
+    background-color: var(--clr3);
+    color: var(--clr2);
+    cursor: pointer;
+}
+.click-button{
+    padding: 0.5em 1em;
+    background-color: var(--clr2);
+    color: white;
+    margin: auto;
+}
+.click-button:hover{
+    background-color: white;
+    color: var(--clr2);
+    cursor: pointer;
+}
+#youth-container{
+    display: grid;
+    grid-template-columns: 200px 550px 250px;
+}
+#youth-menu{
+    border-top: 54px solid var(--clr1);
+    border-radius: 30px;
+}
+#youth-menu ul{
+    padding-left: 0;
+}
+#youth-menu li{
+    list-style: none;
+    padding: 0.5em 3em;
+    text-align: center;
+    background-color: var(--clr2);
+    color: white;
+    font-weight: bold;
+}
+#player-stats>div>div{
+    display: flex;
+}
+#player-stats>div>div img{
+    margin: 2em 2em;
+}
+.player-profile>div{
+    margin-top: 2em;
+}
+.player-stats-detail{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+}
+.player-stats-detail ul{
+    padding: 0 1em;
+    list-style: none;
+}
+.player-stats-detail li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border-bottom: 2px solid var(--clr2);
+}
+.hire-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 1em 0;
+    font-weight: bold;
+    line-height: 24px;
+}
+.round-border-top{
+    border-radius: 30px 30px 0 0;
+}
+.youth-info p:not(.tut_heading){
+    margin: 1em 0;
+}
+#training ul{
+    list-style: none;
+    padding-left: 0;
+}
+#training li>div{
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#training button{
+    margin: unset;
+}
+#training select{
+    padding: 0.5em;
+}
+.center-heading{
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#player-profile-container{
+    display: grid;
+    grid-template-columns: 190px 550px 240px;
+    border-radius: 30px 30px 0 0;
+    grid-column-gap: 10px;
+}
+#player-profile-container2{
+    display: grid;
+    grid-template-columns: 190px 550px 240px;
+    border-radius: 30px 30px 0 0;
+    grid-column-gap: 10px;
+}
+.player-profile-container{
+    background-color: rgba(255, 99, 54, 0.84);
+    border-radius: 30px 30px 0 0;
+}
+#player-profile-menu>ul{
+    border-top: 54px solid var(--clr1);
+    border-radius: 30px 30px 0 0;
+    padding-left: 0;
+    list-style: none;
+}
+#player-profile-menu>ul>li{
+    padding: 0.5em 2em;
+    background-color: var(--clr2);
+    color: white;
+}
+#player-profile-menu>ul>li:hover{
+    background-color: white;
+    color: var(--clr2);
+    cursor: pointer;
+}
+#player-profile-menu2>ul{
+    border-top: 54px solid var(--clr1);
+    border-radius: 30px 30px 0 0;
+    padding-left: 0;
+    list-style: none;
+}
+#player-profile-menu2>ul>li{
+    padding: 0.5em 2em;
+    background-color: var(--clr2);
+    color: white;
+}
+#player-profile-menu2>ul>li:hover{
+    background-color: white;
+    color: var(--clr2);
+    cursor: pointer;
+}
+.player-profile-name{
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--clr2);
+    color: white;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.player-profile-stats{
+    display: grid;
+    grid-template-columns: 200px auto ;
+    place-items: center;
+    padding-bottom: 1em;
+}
+.player-profile-stats img{
+    padding: 1em;
+    background-color: var(--clr2);
+}
+.player-profile-stats ul{
+    list-style:none ;
+    padding-left: 0;
+}
+.player-profile-stats li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.player-profile-stats li div{
+    padding: 0.1em  0.5em;
+    margin: 0.2em 0;
+    color: white;
+    background-color: var(--clr2);
+}
+.player-profile-stats li>div:first-child{
+    font-weight: bold;
+}
+.player-profile-skills .tut_heading{
+    font-size: 1rem;
+}
+.player-profile-skills>div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.player-profile-skills ul{
+    padding: 0.5em 1em;
+    list-style: none;
+}
+.player-profile-skills li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    background-color: var(--clr2);
+    padding: 0.2em 0.3em;
+    margin: 0.5em 0;
+}
+.player-profile-skills li div:nth-child(1) {
+    font-weight: bold;
+}
+.player-profile-skills li div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+}
+.player-profile-sidemenu{
+    height: max-content;
+}
+.player-profile-sidemenu>p:nth-child(2){
+    font-size: 1rem;
+}
+
+.player-profile-sidemenu button{
+    display: block;
+    margin: 0.5em 0;
+}
+.player-profile-sidemenu div{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.transfer ul{
+
+    list-style: none;
+    background-color: rgba(255, 127, 80, 0.87);
+    padding-bottom: 1em;
+    padding-left: 0;
+}
+.transfer li{
+    display: grid;
+    grid-template-columns: 200px 115px  115px 115px 115px 115px 120px 103px;
+    padding: 0.3em 0;
+    place-items: center;
+    background-color: var(--clr2);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.transfer ul>li:first-child{
+    background-color: var(--clr4);
+}
+.transfer li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transfer input{
+    width: 70%;
+    height: 100%;
+}
+.left-side-menu>ul{
+    border-top: 54px solid var(--clr1);
+    border-radius: 30px 30px 0 0;
+    padding-left: 0;
+    list-style: none;
+}
+.left-side-menu>ul>li{
+    padding: 0.5em 2em;
+    background-color: var(--clr2);
+    color: white;
+}
+.left-side-menu>ul>li:hover{
+    background-color: white;
+    color: var(--clr2);
+    cursor: pointer;
+}
+.bidding-container{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 10px;
+}
+.current-bids>div ul{
+    list-style: none;
+    padding: 0;
+}
+.current-bids>div li{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0.3em 0;
+    place-items: center;
+    background-color: var(--clr2);
+    color: white;
+    margin: 0.5em 0;
+
+}
+.current-bids li:first-child{
+    font-weight: bold;
+}
+.league-container{
+    display: grid;
+    grid-template-columns: 150px auto 300px;
+    grid-column-gap: 10px;
+}
+.right-sidemenu ul{
+    list-style: none;
+    padding-left: 0;
+    background-color: rgba(195, 81, 47, 0.78);
+}
+.right-sidemenu li{
+    text-align: center;
+    padding: 0.3em 0;
+    background-color: var(--clr2);
+    color: white;
+    margin-bottom: 0.5em;
+}
+.league-table{
+    background-color: rgba(255, 127, 80, 0.84);
+    height: max-content;
+    padding-bottom: 1em;
+    border-radius: 30px 30px 0 0;
+}
+.league-table ul{
+    padding-left: 0;
+    list-style: none;
+}
+.league-table li{
+    display: grid;
+    grid-template-columns: 50px 150px repeat(6, 1fr);
+    place-items: center;
+    padding: 0.3em 0;
+    margin-bottom: 0.5em;
+    background-color: #c3512f;
+    color: white;
+}
+.club-container{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-column-gap: 10px;
+
+}
+.club-container .left-side-menu{
+    text-align: center;
+}
+.club-body{
+    background-color: rgba(255, 127, 80, 0.87);
+    color: white;
+    display: grid;
+    border-radius: 30px 30px 0 0;
+}
+.club-name{
+    background-color: #c3512f;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-top: 1em;
+}
+.club-body img{
+    place-self: center;
+}
+.club-stats{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.club-stats li{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.3em;
+    background-color: #c3512f;
+    margin-bottom: 0.5em;
+    place-items: center;
+}
+.club-info{
+    list-style: none;
+}
+.club-info li{
+    display: flex;
+    padding: 0.3em 0;
+
+}
+.club-info div{
+    font-weight: bold;
+}

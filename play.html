@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="play.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header id="myNav">
@@ -52,7 +54,1533 @@
 <section class="first-section">
     <div class="container">
         <p class="orange semi-3rem center mobile-only">Please visit the desktop website to access the game.</p>
-        <img src="images/football%20manager.png" alt="" id="game-template-img">
+<!--        <img src="images/football%20manager.png" alt="" id="game-template-img">-->
+        <div id="game-container">
+            <div id="game">
+                <div id="game-nav">
+                    <ul id="game-nav-1">
+                        <li><a href="#"><img src="images/tutorial/game-nav/0.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/1.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/4.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/5.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/tutorial/game-nav/6.png" alt=""></a></li>
+                    </ul>
+                    <div id="menu-bar">
+                        <ul class="game-nav-2" id="homeMenu">
+                            <li><a href="#" id="menu-home">Home</a></li>
+                            <li><a href="#" id="menu-club">Club</a></li>
+                            <li><a href="#" id="menu-finances">Finances</a></li>
+                            <li><a href="#" id="menu-stadium">Stadium</a></li>
+                            <li><a href="#" id="menu-account">Account</a></li>
+                        </ul>
+                        <ul class="game-nav-2" id="tacticsMenu">
+                            <li><a href="#" id="menu-tactics">Tactics</a></li>
+                            <li><a href="#" id="menu-players">Players</a></li>
+                            <li><a href="#" id="menu-youth">Youth Development</a></li>
+                            <li><a href="#" id="menu-training">Training</a></li>
+                        </ul>
+                        <ul class="game-nav-2" id="transferMenu">
+                            <li><a href="#" id="menu-transfer">Transfer</a></li>
+                            <li><a href="#" id="menu-shortlist">Shortlist</a></li>
+                            <li><a href="#" id="menu-bids">BIDS</a></li>
+                            <li><a href="#" id="menu-scouts">Scouts</a></li>
+                        </ul>
+                        <ul class="game-nav-2" id="leagueMenu">
+                            <li><a href="#" id="menu-league">League</a></li>
+                            <li><a href="#" id="menu-cup">Cup</a></li>
+                            <li><a href="#" id="menu-international-cup">International Cup</a></li>
+                            <li><a href="#" id="menu-national-teams">National Teams</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tutorial-home-screen">
+                    <ul id="tutorial-steps">
+                        <li class="selected-step">
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                            <button id="tutorial-start-button">Start</button>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>League</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tutorial-home-screen2">
+                    <ul id="tutorial-steps">
+                        <li>
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                        </li>
+                        <li class="selected-step">
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                            <button id="tutorial-start-button2">Start</button>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>League</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue3" class="click-button">Continue</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tutorial-home-screen3">
+                    <ul id="tutorial-steps">
+                        <li>
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                        </li>
+                        <li class="selected-step">
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+                            <button id="tutorial-start-button3">Start</button>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>League</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tutorial-home-screen4">
+                    <ul id="tutorial-steps">
+                        <li>
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+
+                        </li>
+                        <li class="selected-step">
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                            <button id="tutorial-start-button4">Start</button>
+                        </li>
+                        <li>
+                            <div>
+                                <p>League</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue9" class="click-button">Continue</button>
+                            <button id="continue10" class="click-button">Visit Profile</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="tutorial-home-screen5">
+                    <ul id="tutorial-steps">
+                        <li>
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                        </li>
+                        <li class="selected-step">
+                            <div>
+                                <p>League</p>
+                            </div>
+                            <button id="tutorial-start-button5">Start</button>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tutorial-home-screen6">
+                    <ul id="tutorial-steps">
+                        <li>
+                            <div>
+                                <p>Tactics and First Match</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Stadium and Youth</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Training and Overview</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer and Bids</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>League</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tactics">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div>
+                        <div id="tactics-container">
+                            <div id="players-table">
+                                <ul>
+                                    <li>
+                                        <div></div>
+                                        <div>Name</div>
+                                        <div>Position</div>
+                                        <div>Rating</div>
+                                    </li>
+                                    <li>
+                                        <div>1</div>
+                                        <div>Eugeno Willard</div>
+                                        <div>Dm C</div>
+                                        <div>3/5</div>
+                                    </li>
+                                    <li>
+                                        <div>11</div>
+                                        <div>George Neel</div>
+                                        <div>Dm L</div>
+                                        <div>3/5</div>
+                                    </li>
+                                    <li>
+                                        <div>5</div>
+                                        <div>Booker Lewis</div>
+                                        <div>Dm R</div>
+                                        <div>3/5</div>
+                                    </li>
+                                    <li>
+                                        <div>14</div>
+                                        <div>Rylan Rosas</div>
+                                        <div>F</div>
+                                        <div>2.5/5</div>
+                                    </li>
+                                    <li>
+                                        <div>2</div>
+                                        <div>Buster Dwyer</div>
+                                        <div>M C</div>
+                                        <div>3.2/5</div>
+                                    </li>
+                                    <li>
+                                        <div>6</div>
+                                        <div>Roger Gage</div>
+                                        <div>F</div>
+                                        <div>2.8/5</div>
+                                    </li>
+                                    <li>
+                                        <div>9</div>
+                                        <div>Welland Dumblebore</div>
+                                        <div>F</div>
+                                        <div>2/5</div>
+                                    </li>
+                                    <li>
+                                        <div>10</div>
+                                        <div>Rad Shills</div>
+                                        <div>Gk</div>
+                                        <div>1.8/5</div>
+                                    </li>
+                                    <li>
+                                        <div>19</div>
+                                        <div>Frank Jr</div>
+                                        <div>D R/C</div>
+                                        <div>2.2/5</div>
+                                    </li>
+                                    <li>
+                                        <div>8</div>
+                                        <div>Collin McGuire</div>
+                                        <div>D R</div>
+                                        <div>2.6/5</div>
+                                    </li>
+                                    <li>
+                                        <div>4</div>
+                                        <div>John Henry</div>
+                                        <div>D C/R</div>
+                                        <div>2.4/5</div>
+                                    </li>
+                                    <li>
+                                        <div>16</div>
+                                        <div>Adam Smith</div>
+                                        <div>F</div>
+                                        <div>2.8/5</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="images/tutorial/pitch-view.png" alt="" id="pitch-view">
+                            <div id="pitch-position">
+                                <img src="images/tutorial/pitch-positions.png" alt="">
+                                <button>Update Changes</button>
+                            </div>
+                        </div>
+                        <p class="note">You cannot have more than 5 foreigners in uniform for a match.</p>
+                    </div>
+                </div>
+
+                <div id="match-simulation">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue2" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <img src="images/tutorial/top_frame.png" alt="" style="width: 100%">
+
+                    <div id="game-breakdown">
+                        <p class="tut_heading">Game Breakdown</p>
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>21'</div>
+                                        <div>C. Gaines (G)</div>
+                                        <div>1 - 0</div>
+                                        <div></div>
+                                    </li>
+                                    <li>
+                                        <div>51'</div>
+                                        <div></div>
+                                        <div>YC</div>
+                                        <div>R. Flaherty</div>
+                                    </li>
+                                    <li>
+                                        <div>55'</div>
+                                        <div>D. Kincaid</div>
+                                        <div>YC</div>
+                                        <div></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>56%</div>
+                                        <div>Possession</div>
+                                        <div>44%</div>
+                                    </li>
+                                    <li>
+                                        <div>7</div>
+                                        <div>Shots</div>
+                                        <div>5</div>
+                                    </li>
+                                    <li>
+                                        <div>6</div>
+                                        <div>Shots on target</div>
+                                        <div>2</div>
+                                    </li>
+                                    <li>
+                                        <div>3</div>
+                                        <div>Set Pieces</div>
+                                        <div>3</div>
+                                    </li>
+                                    <li>
+                                        <div>0</div>
+                                        <div>Penalties</div>
+                                        <div>0</div>
+                                    </li>
+                                    <li>
+                                        <div>1</div>
+                                        <div>Yellow Cards</div>
+                                        <div>1</div>
+                                    </li>
+                                    <li>
+                                        <div>0</div>
+                                        <div>Red Cards</div>
+                                        <div>0</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="player-background">
+                        <p class="tut_heading">Player Breakdown</p>
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>Gk</div>
+                                        <div>E. Willard</div>
+                                        <div>5.6</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>G. Neel</div>
+                                        <div>5.1</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>B. Lewis</div>
+                                        <div>6.7</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>R. Rosas</div>
+                                        <div>7.9</div>
+                                    </li>
+                                    <li>
+                                        <div>Dm</div>
+                                        <div>B. Dwyer</div>
+                                        <div>5.5</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>R. Gage</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>W. Dumbledore</div>
+                                        <div>4.9</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>R. Shills</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>C. McGuire</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>J. Henry</div>
+                                        <div>5.0</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>A. Smith</div>
+                                        <div>4.0</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="images/tutorial/pitch-view-2.png" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>Gk</div>
+                                        <div>E. Willard</div>
+                                        <div>5.6</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>G. Neel</div>
+                                        <div>5.1</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>B. Lewis</div>
+                                        <div>6.7</div>
+                                    </li>
+                                    <li>
+                                        <div>D</div>
+                                        <div>R. Rosas</div>
+                                        <div>7.9</div>
+                                    </li>
+                                    <li>
+                                        <div>Dm</div>
+                                        <div>B. Dwyer</div>
+                                        <div>5.5</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>R. Gage</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>W. Dumbledore</div>
+                                        <div>4.9</div>
+                                    </li>
+                                    <li>
+                                        <div>M</div>
+                                        <div>R. Shills</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>C. McGuire</div>
+                                        <div>4.8</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>J. Henry</div>
+                                        <div>5.0</div>
+                                    </li>
+                                    <li>
+                                        <div>F</div>
+                                        <div>A. Smith</div>
+                                        <div>4.0</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="stadium">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue4" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div class="stadium-upgrade">
+                        <img src="images/tutorial/stadium_image.jpg" alt="" style="width: 100%;">
+                        <div>
+                            <p id="stadium-level"></p>
+                            <p>Improves the quality and quantity of the youth players you draft each week. Comes at a great
+                                expense though and never with a guarantee of a good draft.</p>
+                            <button id="upgrade-stadium">Upgrade Stadium</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="youth-development">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue5" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div id="youth-container">
+                        <div id="youth-menu">
+                            <ul>
+                                <li>Training</li>
+                                <li>Players</li>
+                                <li>Facilities</li>
+                            </ul>
+                        </div>
+                        <div id="player-stats">
+                            <p class="tut_heading round-border-top">Youth Development</p>
+                            <div>
+                                <div class="player-profile">
+                                    <img src="images/tutorial/player_pic2.jpg" alt="">
+                                    <div>
+                                        <p>Fausto Seau</p>
+                                        <p>Midfielder Right</p>
+                                        <hr>
+                                        <p>Age: 19</p>
+                                        <p>Wage: 33,053</p>
+                                        <p>200,000</p>
+                                    </div>
+                                </div>
+                                <div class="player-stats-detail">
+                                    <ul>
+                                        <li>
+                                            <div>Strength</div>
+                                            <div>10</div>
+                                        </li>
+                                        <li>
+                                            <div>Stamina</div>
+                                            <div>7</div>
+                                        </li>
+                                        <li>
+                                            <div>Pace</div>
+                                            <div>6</div>
+                                        </li>
+                                        <li>
+                                            <div>Marking</div>
+                                            <div>5</div>
+                                        </li>
+                                        <li>
+                                            <div>Tackling</div>
+                                            <div>9</div>
+                                        </li>
+                                        <li>
+                                            <div>Workrate</div>
+                                            <div>9</div>
+                                        </li>
+                                        <li>
+                                            <div>Positioning</div>
+                                            <div>7</div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div>Passing</div>
+                                            <div>8</div>
+                                        </li>
+                                        <li>
+                                            <div>Crossing</div>
+                                            <div>13</div>
+                                        </li>
+                                        <li>
+                                            <div>Technique</div>
+                                            <div>17</div>
+                                        </li>
+                                        <li>
+                                            <div>Heading</div>
+                                            <div>6</div>
+                                        </li>
+                                        <li>
+                                            <div>Finishing</div>
+                                            <div>4</div>
+                                        </li>
+                                        <li>
+                                            <div>Longshots</div>
+                                            <div>7</div>
+                                        </li>
+                                        <li>
+                                            <div>Set Pieces</div>
+                                            <div>2</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hire-player">
+                                    <p>Youth Scout's Recommendation</p>
+                                    <p>2/5</p>
+                                    <button class="click-button" id="hire-player">Hire</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="youth-info">
+                            <div>
+                                <p class="tut_heading round-border-top">Facility Information</p>
+                                <p>Youth Academy Level 1</p>
+                            </div>
+                            <div>
+                                <p>New Reports Each Saturday</p>
+                                <p>Each Saturday you will receive a report from your youth scouting staff containing a review of
+                                    the most prominent youth players your Youth Academy and scouting network has produced. This
+                                    report details each player's current skills, and an official review of the player's talent.
+                                    The better your Youth Academy, the more accurate this review will be.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="training">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue6" class="click-button">Continue</button>
+                            <button id="continue7" class="click-button">Visit Profile</button>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p class="tut_heading round-border-top">Technical Drills</p>
+                                <p class="center-heading">Select player to train in Technical Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Fitness Drills</p>
+                                <p class="center-heading">Select player to train in Fitness Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Tactical Drills</p>
+                                <p class="center-heading">Select player to train in Tactical Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Finishing Drills</p>
+                                <p class="center-heading">Select player to train in Finishing Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Defending Drills</p>
+                                <p class="center-heading">Select player to train in Defending Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Winger Drills</p>
+                                <p class="center-heading">Select player to train in Winger Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tut_heading round-border-top">Goalkeeping Drills</p>
+                                <p class="center-heading">Select player to train in Goalkeeping Drills</p>
+                                <div>
+                                    <label>
+                                        <select>
+                                            <option value="C. Gaines">C. Gaines</option>
+                                            <option value="E. Willard">E. Willard</option>
+                                            <option value="B. Lewis">B. Lewis</option>
+                                            <option value="R. Rosas">R. Rosas</option>
+                                            <option value="B. Dwyer">B. Dwyer</option>
+                                            <option value="R. Gage">R. Gage</option>
+                                            <option value="M. Dumbledore">M. Dumbledore</option>
+                                            <option value="R. Shills">R. Shills</option>
+                                            <option value="C. McGuire">C. McGuire</option>
+                                            <option value="J. Henry">J. Henry</option>
+                                            <option value="A. Smith">A. Smith</option>
+                                        </select>
+                                    </label>
+                                    <button class="click-button">Train</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="player-profile">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue8" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div id="player-profile-container">
+                        <div id="player-profile-menu">
+                            <ul>
+                                <li>Squad Overview</li>
+                                <li>Statistics</li>
+                                <li>History</li>
+                                <li>Fixtures</li>
+                            </ul>
+                        </div>
+                        <div class="player-profile-container">
+                            <p class="tut_heading round-border-top">Player Profile</p>
+                            <div>
+                                <div class="player-profile-name">
+                                    <p>98. Sterling Stockton</p>
+                                    <p>Defensive Midfielder Right</p>
+                                </div>
+                                <div class="player-profile-stats">
+                                    <img src="images/tutorial/player_pic3.jpg" alt="">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div>Club</div>
+                                                <div>Sporting Cheyenne</div>
+                                            </li>
+                                            <li>
+                                                <div>Age</div>
+                                                <div>20 Years 1 Month</div>
+                                            </li>
+                                            <li>
+                                                <div>Height & Weight</div>
+                                                <div>185cm / 82kg</div>
+                                            </li>
+                                            <li>
+                                                <div>Wage</div>
+                                                <div>30,000</div>
+                                            </li>
+                                            <li>
+                                                <div>Recommendations</div>
+                                                <div>3/5</div>
+                                            </li>
+                                            <li>
+                                                <div>Status</div>
+                                                <div>Playing</div>
+                                            </li>
+                                            <li>
+                                                <div>Routine</div>
+                                                <div>8.7</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="player-profile-skills">
+                                    <p class="tut_heading">Skills</p>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div>Strength</div>
+                                                <div>14</div>
+                                            </li>
+                                            <li>
+                                                <div>Stamina</div>
+                                                <div>12</div>
+                                            </li>
+                                            <li>
+                                                <div>Pace</div>
+                                                <div>12</div>
+                                            </li>
+                                            <li>
+                                                <div>Marking</div>
+                                                <div>3</div>
+                                            </li>
+                                            <li>
+                                                <div>Tackling</div>
+                                                <div>8</div>
+                                            </li>
+                                            <li>
+                                                <div>Workrate</div>
+                                                <div>7</div>
+                                            </li>
+                                            <li>
+                                                <div>Positioning</div>
+                                                <div>9</div>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div>Passing</div>
+                                                <div>9</div>
+                                            </li>
+                                            <li>
+                                                <div>Crossing</div>
+                                                <div>10</div>
+                                            </li>
+                                            <li>
+                                                <div>Technique</div>
+                                                <div>1</div>
+                                            </li>
+                                            <li>
+                                                <div>Heading</div>
+                                                <div>6</div>
+                                            </li>
+                                            <li>
+                                                <div>Finishing</div>
+                                                <div>4</div>
+                                            </li>
+                                            <li>
+                                                <div>Longshots</div>
+                                                <div>4</div>
+                                            </li>
+                                            <li>
+                                                <div>Set Pieces</div>
+                                                <div>2</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-profile-sidemenu player-profile-container">
+                            <p class="tut_heading round-border-top">Transfer Options</p>
+                            <div>
+                                <button class="click-button">Set Asking Price</button>
+                                <button class="click-button">Reject All Bids</button>
+                                <button class="click-button">Transfer List Player</button>
+                                <button class="click-button">Fire Player</button>
+                            </div>
+                            <p class="sub_heading">Other Options</p>
+                            <div>
+                                <button class="click-button">Edit Note</button>
+                                <button class="click-button">Player Nickname</button>
+                                <button class="click-button">Change Favourite Position</button>
+                                <button class="click-button">Compare Players</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="player-profile2">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue11" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div id="player-profile-container2">
+                        <div id="player-profile-menu2">
+                            <ul>
+                                <li>Squad Overview</li>
+                                <li>Statistics</li>
+                                <li>History</li>
+                                <li>Fixtures</li>
+                            </ul>
+                        </div>
+                        <div class="player-profile-container">
+                            <p class="tut_heading round-border-top">Player Profile</p>
+                            <div>
+                                <div class="player-profile-name">
+                                    <p>98. Hemshire Watson</p>
+                                    <p>Defensive Midfielder Right</p>
+                                </div>
+                                <div class="player-profile-stats">
+                                    <img src="images/tutorial/player_pic4.jpg" alt="">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div>Club</div>
+                                                <div>Sporting Cheyenne</div>
+                                            </li>
+                                            <li>
+                                                <div>Age</div>
+                                                <div>22 Years 5 Month</div>
+                                            </li>
+                                            <li>
+                                                <div>Height & Weight</div>
+                                                <div>187cm / 85kg</div>
+                                            </li>
+                                            <li>
+                                                <div>Wage</div>
+                                                <div>28,000</div>
+                                            </li>
+                                            <li>
+                                                <div>Recommendations</div>
+                                                <div>2.5/5</div>
+                                            </li>
+                                            <li>
+                                                <div>Status</div>
+                                                <div>Playing</div>
+                                            </li>
+                                            <li>
+                                                <div>Routine</div>
+                                                <div>4.7</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="player-profile-skills">
+                                    <p class="tut_heading">Skills</p>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div>Strength</div>
+                                                <div>14</div>
+                                            </li>
+                                            <li>
+                                                <div>Stamina</div>
+                                                <div>12</div>
+                                            </li>
+                                            <li>
+                                                <div>Pace</div>
+                                                <div>12</div>
+                                            </li>
+                                            <li>
+                                                <div>Marking</div>
+                                                <div>3</div>
+                                            </li>
+                                            <li>
+                                                <div>Tackling</div>
+                                                <div>8</div>
+                                            </li>
+                                            <li>
+                                                <div>Workrate</div>
+                                                <div>7</div>
+                                            </li>
+                                            <li>
+                                                <div>Positioning</div>
+                                                <div>9</div>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div>Passing</div>
+                                                <div>9</div>
+                                            </li>
+                                            <li>
+                                                <div>Crossing</div>
+                                                <div>10</div>
+                                            </li>
+                                            <li>
+                                                <div>Technique</div>
+                                                <div>1</div>
+                                            </li>
+                                            <li>
+                                                <div>Heading</div>
+                                                <div>6</div>
+                                            </li>
+                                            <li>
+                                                <div>Finishing</div>
+                                                <div>4</div>
+                                            </li>
+                                            <li>
+                                                <div>Longshots</div>
+                                                <div>4</div>
+                                            </li>
+                                            <li>
+                                                <div>Set Pieces</div>
+                                                <div>2</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-profile-sidemenu player-profile-container">
+                            <p class="tut_heading round-border-top">Transfer Options</p>
+                            <div>
+                                <button class="click-button">Set Asking Price</button>
+                                <button class="click-button">Reject All Bids</button>
+                                <button class="click-button" id="transfer-list-player">Transfer List Player</button>
+                                <button class="click-button">Fire Player</button>
+                            </div>
+                            <p class="sub_heading">Other Options</p>
+                            <div>
+                                <button class="click-button">Edit Note</button>
+                                <button class="click-button">Player Nickname</button>
+                                <button class="click-button">Change Favourite Position</button>
+                                <button class="click-button">Compare Players</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transfer" class="transfer">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue12" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <p class="tut_heading round-border-top ">Transfer</p>
+                        <ul>
+                            <li>
+                                <div>Name</div>
+                                <div>Age</div>
+                                <div>Fp</div>
+                                <div>Rec</div>
+                                <div>Time Left</div>
+                                <div>Current Bid</div>
+                                <div>Place Bid</div>
+                                <div>Bid</div>
+                            </li>
+                            <li>
+                                <div>Masahi Oda</div>
+                                <div>29</div>
+                                <div>D R</div>
+                                <div>3/5</div>
+                                <div>2h</div>
+                                <div>1,345,324</div>
+                                <div>
+                                    <label>$
+                                        <input type='number'>
+                                    </label>
+                                </div>
+                                <div><button class="click-button" id="bid-player">Bid</button></div>
+                            </li>
+                            <li>
+                                <div>Tunca Bellek</div>
+                                <div>26</div>
+                                <div>D C</div>
+                                <div>3/5</div>
+                                <div>3h</div>
+                                <div>1,545,456</div>
+                                <div>
+                                    <label>$
+                                        <input type='number'>
+                                    </label>
+                                </div>
+                                <div><button class="click-button">Bid</button></div>
+                            </li>
+                            <li>
+                                <div>Michel Prospert</div>
+                                <div>25</div>
+                                <div>OM L</div>
+                                <div>3/5</div>
+                                <div>1h</div>
+                                <div>594,466</div>
+                                <div>
+                                    <label>$
+                                        <input type='number'>
+                                    </label>
+                                </div>
+                                <div><button class="click-button">Bid</button></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="bidding" class="bidding">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue13" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div class="bidding-container">
+                        <div class="left-side-menu">
+                            <ul>
+                                <li>Finances</li>
+                                <li>Transfer History</li>
+                            </ul>
+                        </div>
+                        <div class="current-bids">
+                            <p class="tut_heading round-border-top">Current Bids</p>
+                            <div>
+                                <p class="sub_heading">Transfers In</p>
+                                <ul>
+                                    <li>
+                                        <div>Player</div>
+                                        <div>Status</div>
+                                        <div>BID</div>
+                                        <div>Seller</div>
+                                        <div>Expiry</div>
+                                    </li>
+                                    <li>
+                                        <div>Masashi Oda</div>
+                                        <div>Winning</div>
+                                        <div>1M</div>
+                                        <div>S-Pulse</div>
+                                        <div>1h</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="sub_heading">Transfers Out</p>
+                                <ul>
+                                    <li>
+                                        <div>Player</div>
+                                        <div>Status</div>
+                                        <div>BID</div>
+                                        <div>Seller</div>
+                                        <div>Expiry</div>
+                                    </li>
+                                    <li>
+                                        <div>Eliash Burkett</div>
+                                        <div>Transfer Listed</div>
+                                        <div>0</div>
+                                        <div>No Bidders</div>
+                                        <div>1d</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="league">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue14" class="click-button">Continue</button>
+                            <button id="top-division" class="click-button">Check League</button>
+                            <button id="continue15" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div class="league-container">
+                        <div class="left-side-menu">
+                            <ul>
+                                <li>Table</li>
+                                <li>Team Of The Round</li>
+                                <li>Fixtures</li>
+                                <li>Statistics</li>
+                                <li>History</li>
+                            </ul>
+                        </div>
+                        <div class="league-table">
+                            <p class="tut_heading round-border-top">USA  ASL 3, Group 17</p>
+                            <ul>
+                                <li>
+                                    <div>#</div>
+                                    <div>Club</div>
+                                    <div>Gp</div>
+                                    <div>W</div>
+                                    <div>D</div>
+                                    <div>L</div>
+                                    <div>Goals</div>
+                                    <div>Points</div>
+                                </li>
+                                <li>
+                                    <div>1</div>
+                                    <div>Hammond SS</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>2</div>
+                                    <div>Saint Joseph</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>3</div>
+                                    <div>Troy S.S</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>4</div>
+                                    <div>Rochester Hills FC</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>5</div>
+                                    <div>Edinburg C.D</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>6</div>
+                                    <div>Toms River K.V</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>7</div>
+                                    <div>Lawrence B.K.</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>8</div>
+                                    <div>Oxnard C.F.C</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li>
+                                    <div>9</div>
+                                    <div>Hempstead I.K</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-sidemenu">
+                            <p class="tut_heading round-border-top">Rounds</p>
+                            <ul>
+                                <li>Hammond SS - Troy S.S</li>
+                                <li>Independence U.D - Sunrise F.R</li>
+                                <li>Nampa U.C - Lawrence B.K.</li>
+                                <li>Oxnard C.F.C. - East Lansing S.V</li>
+                                <li>Hempstead I.K - Waukesha F.K.</li>
+                                <li>Rochester Hills - Apple Valley I.F</li>
+                                <li>Saint Joseph C.C - Saint Cloud C.D.</li>
+                                <li>Elgin Footie Clu - Austin F.R.</li>
+                                <li>Toms River K.V - Edinburg C.D</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="club">
+                    <div class="manager-div">
+                        <img src="images/tutorial/mr_tut.png" alt="">
+                        <div>
+                            <p class="manager-speech"></p>
+                            <button id="continue16" class="click-button">Continue</button>
+                        </div>
+
+
+                    </div>
+                    <div class="club-container">
+                        <div class="left-side-menu">
+                            <ul>
+                                <li>Club</li>
+                                <li>Squad Overview</li>
+                                <li>Fixtures</li>
+                                <li>Statistics</li>
+                                <li>History</li>
+                                <li>Stadium</li>
+                                <li>Table</li>
+                            </ul>
+                        </div>
+                        <div class="club-body">
+                            <p class="round-border-top tut_heading">Club</p>
+                            <div class="club-name">
+                                <p>Knickerbocker FC</p>
+                                <p>Competing in Major League</p>
+                            </div>
+                            <img src="images/tutorial/club-logo.png" alt="">
+                            <p style="text-align: center; font-weight: bold;">Founded 2020-01-10</p>
+                            <ul class="club-stats">
+                                <li>
+                                    <div>Benjamin Xiong</div>
+                                    <div>3.5/5</div>
+                                    <div>Rating: 0.00</div>
+                                    <div>Goals: 0</div>
+                                </li>
+                                <li>
+                                    <div>Carl Chen</div>
+                                    <div>3/5</div>
+                                    <div>Rating: 0.00</div>
+                                    <div>Goals: 0</div>
+                                </li>
+                                <li>
+                                    <div>Patrick Matson</div>
+                                    <div>3.5/5</div>
+                                    <div>Rating: 0.00</div>
+                                    <div>Goals: 0</div>
+                                </li>
+                            </ul>
+                            <ul class="club-info">
+                                <li><div>Club ID:</div> 4359678</li>
+                                <li><div>Last seen 14.</div> January</li>
+                                <li><div>Manager:</div> The Manager</li>
+                                <li><div>Economy:</div> Fine</li>
+                                <li><div>Team Form:</div></li>
+                                <li><div>Club Nickname:</div> Hammond SS</li>
+                                <li><div>City:</div> The City</li>
+                                <li><div>Stadium:</div> Stadium</li>
+                                <li><div>Fans:</div> 5,000 - Hammond SS Supporters</li>
+                                <li><div>Sponsor: </div> Interslice Ltd.</li>
+                            </ul>
+                        </div>
+                        <div class="right-sidemenu">
+                            <p class="tut_heading round-border-top">Trophies</p>
+                            <ul>
+                                <li class="click-button">Champion of American Soccer League Group 2</li>
+                                <li class="click-button">Champion of American Soccer League Group 3</li>
+                                <li class="click-button">Champion of American Soccer League Group 4</li>
+                                <li class="click-button">View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -94,5 +1622,7 @@
 </footer>
 <script src="https://kit.fontawesome.com/d73f645a4a.js"></script>
 <script src="main.js"></script>
+<script src="speech.js"></script>
+<script src="tutorial.js"></script>
 </body>
 </html>
