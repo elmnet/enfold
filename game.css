@@ -33,8 +33,10 @@
     margin: auto;
     font-family: 'Muli', sans-serif;
 }
-#game-container{
-    background-image: url("images/tutorial/game-bg.png");
+#game{
+    /*background-image: url("images/tutorial/game-bg.png");*/
+    border-right: 2px solid var(--clr2);
+    border-left: 2px solid var(--clr2);
 }
 #game-nav-1{
     display: flex;
@@ -260,7 +262,7 @@
 .stadium-upgrade>div{
     width: 500px;
     text-align: center;
-    margin: auto;
+    margin: auto !important;
     padding: 2em;
 }
 .stadium-upgrade>div p:first-child{
